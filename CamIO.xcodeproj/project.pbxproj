@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 53;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9115761D22178185002CE4DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9115761C22178185002CE4DB /* AppDelegate.swift */; };
+		9115761F22178185002CE4DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9115761E22178185002CE4DB /* ViewController.swift */; };
+		9115762222178185002CE4DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9115762022178185002CE4DB /* Main.storyboard */; };
+		9115762422178185002CE4DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9115762322178185002CE4DB /* Assets.xcassets */; };
+		9115762722178185002CE4DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9115762522178185002CE4DB /* LaunchScreen.storyboard */; };
+		9115762F221781A5002CE4DB /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9115762E221781A5002CE4DB /* opencv2.framework */; };
+		91157633221781CA002CE4DB /* OpenCvWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 91157632221781CA002CE4DB /* OpenCvWrapper.mm */; };
+		9115764322178B1F002CE4DB /* markerArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9115763B22178B1F002CE4DB /* markerArray.cpp */; };
+		9115764422178B1F002CE4DB /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9115763C22178B1F002CE4DB /* util.cpp */; };
+		9115764D22178F77002CE4DB /* dowelStylus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9115764C22178F76002CE4DB /* dowelStylus.cpp */; };
+		9115DEC92492A6EB009B5A76 /* silence.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9115DEC82492A6EB009B5A76 /* silence.wav */; };
+		918DFF0B23D917B600EEAC10 /* right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 918DFF0723D917B600EEAC10 /* right.mp3 */; };
+		918DFF0C23D917B600EEAC10 /* left.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 918DFF0823D917B600EEAC10 /* left.mp3 */; };
+		918DFF0D23D917B600EEAC10 /* forward.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 918DFF0923D917B600EEAC10 /* forward.mp3 */; };
+		918DFF0E23D917B600EEAC10 /* back.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 918DFF0A23D917B600EEAC10 /* back.mp3 */; };
+		918DFF1223D9184F00EEAC10 /* beep5-2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 918DFF0F23D9184E00EEAC10 /* beep5-2.wav */; };
+		918DFF1323D9184F00EEAC10 /* beep5-3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 918DFF1023D9184F00EEAC10 /* beep5-3.wav */; };
+		918DFF1423D9184F00EEAC10 /* beep5-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 918DFF1123D9184F00EEAC10 /* beep5-1.wav */; };
+		918DFF1723DA847800EEAC10 /* down.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 918DFF1523DA847800EEAC10 /* down.mp3 */; };
+		918DFF1823DA847800EEAC10 /* up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 918DFF1623DA847800EEAC10 /* up.mp3 */; };
+		91914693247C712C001429EE /* beep-low.wav in Resources */ = {isa = PBXBuildFile; fileRef = 91914691247C712C001429EE /* beep-low.wav */; };
+		91914694247C712C001429EE /* beep-high.wav in Resources */ = {isa = PBXBuildFile; fileRef = 91914692247C712C001429EE /* beep-high.wav */; };
+		91914696247D93D9001429EE /* beep5-4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 91914695247D93D9001429EE /* beep5-4.wav */; };
+		91C18DD223AAF85000FDF194 /* CameraCalibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C18DD123AAF85000FDF194 /* CameraCalibViewController.swift */; };
+		91C8F1DD23A85FF600BD0918 /* SimpleCamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C8F1DC23A85FF600BD0918 /* SimpleCamViewController.swift */; };
+		91C8F1DF23A8624500BD0918 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C8F1DE23A8624500BD0918 /* AudioManager.swift */; };
+		91C8F1E123A862A300BD0918 /* TossingBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C8F1E023A862A300BD0918 /* TossingBehavior.swift */; };
+		91C8F1E523A8636100BD0918 /* anchorBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91C8F1E223A8636100BD0918 /* anchorBase.cpp */; };
+		91C8F1E623A8636100BD0918 /* camio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91C8F1E323A8636100BD0918 /* camio.cpp */; };
+		91C8F1E723A8636100BD0918 /* camIoObj.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91C8F1E423A8636100BD0918 /* camIoObj.cpp */; };
+		91C8F21E23A86C8600BD0918 /* crickets3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 91C8F21D23A86C8600BD0918 /* crickets3.mp3 */; };
+		91C8F23B23A86CF400BD0918 /* beep-01a.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 91C8F22623A86CF300BD0918 /* beep-01a.mp3 */; };
+		91C8F24F23A8705800BD0918 /* single click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 91C8F24D23A8705800BD0918 /* single click.mp3 */; };
+		91C8F25023A8705800BD0918 /* double click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 91C8F24E23A8705800BD0918 /* double click.mp3 */; };
+		91C8F25223A8709E00BD0918 /* censor-beep-01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 91C8F25123A8709E00BD0918 /* censor-beep-01.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9115761922178185002CE4DB /* CamIO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CamIO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9115761C22178185002CE4DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9115761E22178185002CE4DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9115762122178185002CE4DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9115762322178185002CE4DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9115762622178185002CE4DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9115762822178185002CE4DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9115762E221781A5002CE4DB /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		91157630221781CA002CE4DB /* CamIo3rd-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CamIo3rd-Bridging-Header.h"; sourceTree = "<group>"; };
+		91157631221781CA002CE4DB /* OpenCvWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCvWrapper.h; sourceTree = "<group>"; };
+		91157632221781CA002CE4DB /* OpenCvWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCvWrapper.mm; sourceTree = "<group>"; };
+		9115763722178B1F002CE4DB /* camIoObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camIoObj.h; sourceTree = "<group>"; };
+		9115763822178B1F002CE4DB /* camio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camio.h; sourceTree = "<group>"; };
+		9115763922178B1F002CE4DB /* markerArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = markerArray.h; sourceTree = "<group>"; };
+		9115763A22178B1F002CE4DB /* dowelStylus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dowelStylus.h; sourceTree = "<group>"; };
+		9115763B22178B1F002CE4DB /* markerArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = markerArray.cpp; sourceTree = "<group>"; };
+		9115763C22178B1F002CE4DB /* util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = util.cpp; sourceTree = "<group>"; };
+		9115763D22178B1F002CE4DB /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		9115764C22178F76002CE4DB /* dowelStylus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dowelStylus.cpp; sourceTree = "<group>"; };
+		9115DEC82492A6EB009B5A76 /* silence.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = silence.wav; sourceTree = "<group>"; };
+		918DFF0723D917B600EEAC10 /* right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = right.mp3; sourceTree = "<group>"; };
+		918DFF0823D917B600EEAC10 /* left.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = left.mp3; sourceTree = "<group>"; };
+		918DFF0923D917B600EEAC10 /* forward.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = forward.mp3; sourceTree = "<group>"; };
+		918DFF0A23D917B600EEAC10 /* back.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = back.mp3; sourceTree = "<group>"; };
+		918DFF0F23D9184E00EEAC10 /* beep5-2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "beep5-2.wav"; sourceTree = "<group>"; };
+		918DFF1023D9184F00EEAC10 /* beep5-3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "beep5-3.wav"; sourceTree = "<group>"; };
+		918DFF1123D9184F00EEAC10 /* beep5-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "beep5-1.wav"; sourceTree = "<group>"; };
+		918DFF1523DA847800EEAC10 /* down.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = down.mp3; sourceTree = "<group>"; };
+		918DFF1623DA847800EEAC10 /* up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = up.mp3; sourceTree = "<group>"; };
+		91914691247C712C001429EE /* beep-low.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "beep-low.wav"; sourceTree = "<group>"; };
+		91914692247C712C001429EE /* beep-high.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "beep-high.wav"; sourceTree = "<group>"; };
+		91914695247D93D9001429EE /* beep5-4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "beep5-4.wav"; sourceTree = "<group>"; };
+		91C18DD123AAF85000FDF194 /* CameraCalibViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCalibViewController.swift; sourceTree = "<group>"; };
+		91C8F1DC23A85FF600BD0918 /* SimpleCamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCamViewController.swift; sourceTree = "<group>"; };
+		91C8F1DE23A8624500BD0918 /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		91C8F1E023A862A300BD0918 /* TossingBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TossingBehavior.swift; sourceTree = "<group>"; };
+		91C8F1E223A8636100BD0918 /* anchorBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = anchorBase.cpp; sourceTree = "<group>"; };
+		91C8F1E323A8636100BD0918 /* camio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = camio.cpp; sourceTree = "<group>"; };
+		91C8F1E423A8636100BD0918 /* camIoObj.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = camIoObj.cpp; sourceTree = "<group>"; };
+		91C8F1E823A863B000BD0918 /* anchorBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = anchorBase.h; sourceTree = "<group>"; };
+		91C8F21D23A86C8600BD0918 /* crickets3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crickets3.mp3; sourceTree = "<group>"; };
+		91C8F22623A86CF300BD0918 /* beep-01a.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "beep-01a.mp3"; sourceTree = "<group>"; };
+		91C8F24D23A8705800BD0918 /* single click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "single click.mp3"; sourceTree = "<group>"; };
+		91C8F24E23A8705800BD0918 /* double click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "double click.mp3"; sourceTree = "<group>"; };
+		91C8F25123A8709E00BD0918 /* censor-beep-01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "censor-beep-01.mp3"; sourceTree = "<group>"; };
+		91C8F37F2589671500094D77 /* 20201128 3D PRINT OPTICAL LOW3.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = "20201128 3D PRINT OPTICAL LOW3.obj"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9115761622178185002CE4DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9115762F221781A5002CE4DB /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9115761022178185002CE4DB = {
+			isa = PBXGroup;
+			children = (
+				9115761B22178185002CE4DB /* CamIo3rd */,
+				9115761A22178185002CE4DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9115761A22178185002CE4DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9115761922178185002CE4DB /* CamIO.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9115761B22178185002CE4DB /* CamIo3rd */ = {
+			isa = PBXGroup;
+			children = (
+				91C8F1ED23A868E500BD0918 /* sound */,
+				91C8F21C23A86A1B00BD0918 /* inc */,
+				91C8F1E923A863CD00BD0918 /* src */,
+				91C8F1EB23A8642500BD0918 /* swift */,
+				9115762E221781A5002CE4DB /* opencv2.framework */,
+				91C8F37F2589671500094D77 /* 20201128 3D PRINT OPTICAL LOW3.obj */,
+				9115762022178185002CE4DB /* Main.storyboard */,
+				9115762322178185002CE4DB /* Assets.xcassets */,
+				9115762522178185002CE4DB /* LaunchScreen.storyboard */,
+				9115762822178185002CE4DB /* Info.plist */,
+				91157631221781CA002CE4DB /* OpenCvWrapper.h */,
+				91157632221781CA002CE4DB /* OpenCvWrapper.mm */,
+				91157630221781CA002CE4DB /* CamIo3rd-Bridging-Header.h */,
+			);
+			path = CamIo3rd;
+			sourceTree = "<group>";
+		};
+		91C8F1E923A863CD00BD0918 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				91C8F1E223A8636100BD0918 /* anchorBase.cpp */,
+				91C8F1E323A8636100BD0918 /* camio.cpp */,
+				91C8F1E423A8636100BD0918 /* camIoObj.cpp */,
+				9115764C22178F76002CE4DB /* dowelStylus.cpp */,
+				9115763B22178B1F002CE4DB /* markerArray.cpp */,
+				9115763C22178B1F002CE4DB /* util.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		91C8F1EB23A8642500BD0918 /* swift */ = {
+			isa = PBXGroup;
+			children = (
+				91C8F1DC23A85FF600BD0918 /* SimpleCamViewController.swift */,
+				91C18DD123AAF85000FDF194 /* CameraCalibViewController.swift */,
+				9115761E22178185002CE4DB /* ViewController.swift */,
+				91C8F1DE23A8624500BD0918 /* AudioManager.swift */,
+				91C8F1E023A862A300BD0918 /* TossingBehavior.swift */,
+				9115761C22178185002CE4DB /* AppDelegate.swift */,
+			);
+			name = swift;
+			sourceTree = "<group>";
+		};
+		91C8F1ED23A868E500BD0918 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				9115DEC82492A6EB009B5A76 /* silence.wav */,
+				91914692247C712C001429EE /* beep-high.wav */,
+				91914691247C712C001429EE /* beep-low.wav */,
+				918DFF1623DA847800EEAC10 /* up.mp3 */,
+				918DFF1523DA847800EEAC10 /* down.mp3 */,
+				918DFF0A23D917B600EEAC10 /* back.mp3 */,
+				918DFF0923D917B600EEAC10 /* forward.mp3 */,
+				918DFF0823D917B600EEAC10 /* left.mp3 */,
+				918DFF0723D917B600EEAC10 /* right.mp3 */,
+				918DFF1123D9184F00EEAC10 /* beep5-1.wav */,
+				918DFF0F23D9184E00EEAC10 /* beep5-2.wav */,
+				918DFF1023D9184F00EEAC10 /* beep5-3.wav */,
+				91914695247D93D9001429EE /* beep5-4.wav */,
+				91C8F25123A8709E00BD0918 /* censor-beep-01.mp3 */,
+				91C8F24E23A8705800BD0918 /* double click.mp3 */,
+				91C8F24D23A8705800BD0918 /* single click.mp3 */,
+				91C8F22623A86CF300BD0918 /* beep-01a.mp3 */,
+				91C8F21D23A86C8600BD0918 /* crickets3.mp3 */,
+			);
+			path = sound;
+			sourceTree = "<group>";
+		};
+		91C8F21C23A86A1B00BD0918 /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				9115763D22178B1F002CE4DB /* util.h */,
+				9115763922178B1F002CE4DB /* markerArray.h */,
+				9115763722178B1F002CE4DB /* camIoObj.h */,
+				9115763A22178B1F002CE4DB /* dowelStylus.h */,
+				91C8F1E823A863B000BD0918 /* anchorBase.h */,
+				9115763822178B1F002CE4DB /* camio.h */,
+			);
+			name = inc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9115761822178185002CE4DB /* CamIO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9115762B22178185002CE4DB /* Build configuration list for PBXNativeTarget "CamIO" */;
+			buildPhases = (
+				9115761522178185002CE4DB /* Sources */,
+				9115761622178185002CE4DB /* Frameworks */,
+				9115761722178185002CE4DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CamIO;
+			productName = CamIo3rd;
+			productReference = 9115761922178185002CE4DB /* CamIO.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9115761122178185002CE4DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Huiying Shen";
+				TargetAttributes = {
+					9115761822178185002CE4DB = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = 9115761422178185002CE4DB /* Build configuration list for PBXProject "CamIO" */;
+			compatibilityVersion = "Xcode 11.4";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9115761022178185002CE4DB;
+			productRefGroup = 9115761A22178185002CE4DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9115761822178185002CE4DB /* CamIO */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9115761722178185002CE4DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91C8F25223A8709E00BD0918 /* censor-beep-01.mp3 in Resources */,
+				918DFF0D23D917B600EEAC10 /* forward.mp3 in Resources */,
+				918DFF1823DA847800EEAC10 /* up.mp3 in Resources */,
+				91914693247C712C001429EE /* beep-low.wav in Resources */,
+				918DFF0C23D917B600EEAC10 /* left.mp3 in Resources */,
+				91914696247D93D9001429EE /* beep5-4.wav in Resources */,
+				918DFF1423D9184F00EEAC10 /* beep5-1.wav in Resources */,
+				9115762722178185002CE4DB /* LaunchScreen.storyboard in Resources */,
+				918DFF1323D9184F00EEAC10 /* beep5-3.wav in Resources */,
+				91914694247C712C001429EE /* beep-high.wav in Resources */,
+				91C8F25023A8705800BD0918 /* double click.mp3 in Resources */,
+				918DFF0B23D917B600EEAC10 /* right.mp3 in Resources */,
+				918DFF1223D9184F00EEAC10 /* beep5-2.wav in Resources */,
+				91C8F21E23A86C8600BD0918 /* crickets3.mp3 in Resources */,
+				91C8F23B23A86CF400BD0918 /* beep-01a.mp3 in Resources */,
+				9115DEC92492A6EB009B5A76 /* silence.wav in Resources */,
+				9115762422178185002CE4DB /* Assets.xcassets in Resources */,
+				9115762222178185002CE4DB /* Main.storyboard in Resources */,
+				91C8F24F23A8705800BD0918 /* single click.mp3 in Resources */,
+				918DFF1723DA847800EEAC10 /* down.mp3 in Resources */,
+				918DFF0E23D917B600EEAC10 /* back.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9115761522178185002CE4DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91C18DD223AAF85000FDF194 /* CameraCalibViewController.swift in Sources */,
+				9115764D22178F77002CE4DB /* dowelStylus.cpp in Sources */,
+				9115761F22178185002CE4DB /* ViewController.swift in Sources */,
+				91C8F1E123A862A300BD0918 /* TossingBehavior.swift in Sources */,
+				91C8F1E623A8636100BD0918 /* camio.cpp in Sources */,
+				9115761D22178185002CE4DB /* AppDelegate.swift in Sources */,
+				91157633221781CA002CE4DB /* OpenCvWrapper.mm in Sources */,
+				9115764322178B1F002CE4DB /* markerArray.cpp in Sources */,
+				9115764422178B1F002CE4DB /* util.cpp in Sources */,
+				91C8F1E523A8636100BD0918 /* anchorBase.cpp in Sources */,
+				91C8F1E723A8636100BD0918 /* camIoObj.cpp in Sources */,
+				91C8F1DD23A85FF600BD0918 /* SimpleCamViewController.swift in Sources */,
+				91C8F1DF23A8624500BD0918 /* AudioManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9115762022178185002CE4DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9115762122178185002CE4DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9115762522178185002CE4DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9115762622178185002CE4DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9115762922178185002CE4DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9115762A22178185002CE4DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9115762C22178185002CE4DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 13;
+				DEVELOPMENT_TEAM = E9BKVZ8679;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CamIo3rd",
+				);
+				"GCC_OPTIMIZATION_LEVEL[arch=*]" = 0;
+				INFOPLIST_FILE = CamIo3rd/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.01;
+				PRODUCT_BUNDLE_IDENTIFIER = org.ski.camiodev;
+				PRODUCT_NAME = CamIO;
+				SWIFT_OBJC_BRIDGING_HEADER = "CamIo3rd/CamIo3rd-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9115762D22178185002CE4DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 13;
+				DEVELOPMENT_TEAM = E9BKVZ8679;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CamIo3rd",
+				);
+				INFOPLIST_FILE = CamIo3rd/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.01;
+				PRODUCT_BUNDLE_IDENTIFIER = org.ski.camiodev;
+				PRODUCT_NAME = CamIO;
+				SWIFT_OBJC_BRIDGING_HEADER = "CamIo3rd/CamIo3rd-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9115761422178185002CE4DB /* Build configuration list for PBXProject "CamIO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9115762922178185002CE4DB /* Debug */,
+				9115762A22178185002CE4DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9115762B22178185002CE4DB /* Build configuration list for PBXNativeTarget "CamIO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9115762C22178185002CE4DB /* Debug */,
+				9115762D22178185002CE4DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9115761122178185002CE4DB /* Project object */;
+}
